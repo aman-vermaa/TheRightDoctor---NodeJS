@@ -42,9 +42,9 @@ exports.updatePerson = async (req, res) => {
 
 // POST /person - Create a new person
 exports.createPerson = async (req, res) => {
-  const { name, age, gender, mobile } = req.body;
-
+  
   try {
+    const { name, age, gender, mobile } = req.body;
     // Debug log
     console.log("Request Body:", req.body);
 
